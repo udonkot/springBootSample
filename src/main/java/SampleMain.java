@@ -9,7 +9,8 @@ public class SampleMain {
 
     @RequestMapping("/")
     String home() {
-        return "Hello Spring-Boot!!";
+        StringBuilder sb = new StringBuilder("Hello Spring-Boot!!").append("\r\n").append("Update!");
+        return sb.toString();
     }
 
     public static void main(String[] args) {
